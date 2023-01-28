@@ -550,6 +550,12 @@ header .collapsCust .navbar-nav .nav-item a.active {
   padding-bottom: 80px;
   background: white;
 }
+@media screen and (max-width: 570px) {
+  .worksMain {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .worksMain .heading {
   text-transform: uppercase;
   text-align: center;
@@ -557,6 +563,11 @@ header .collapsCust .navbar-nav .nav-item a.active {
   color: #272727;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
+}
+@media screen and (max-width: 570px) {
+  .worksMain .heading {
+    font-size: 30px;
+  }
 }
 .worksMain .divider {
   width: 80px;
@@ -566,6 +577,11 @@ header .collapsCust .navbar-nav .nav-item a.active {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 570px) {
+  .worksMain .divider {
+    margin-top: 15px;
+  }
+}
 .worksMain .mainDesc {
   padding-top: 20px;
   max-width: 600px;
@@ -574,8 +590,18 @@ header .collapsCust .navbar-nav .nav-item a.active {
   color: #272727;
   margin: auto;
 }
+@media screen and (max-width: 570px) {
+  .worksMain .mainDesc {
+    padding-top: 15px;
+  }
+}
 .worksMain .workList {
   padding-top: 40px;
+}
+@media screen and (max-width: 570px) {
+  .worksMain .workList {
+    padding-top: 30px;
+  }
 }
 .worksMain .workList .workBox {
   border: 1px solid grey;
@@ -603,11 +629,22 @@ header .collapsCust .navbar-nav .nav-item a.active {
   font-weight: 700;
   font-family: "Oswald", sans-serif;
 }
+@media screen and (max-width: 570px) {
+  .worksMain .workList .workBox .head {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
 .worksMain .workList .workBox .head.partnerHead {
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
   font-family: "Questrial", sans-serif;
+}
+@media screen and (max-width: 570px) {
+  .worksMain .workList .workBox .head.partnerHead {
+    margin-top: 18px;
+  }
 }
 .worksMain .workList .workBox .desc {
   margin-top: 20px;
@@ -615,6 +652,12 @@ header .collapsCust .navbar-nav .nav-item a.active {
   margin-bottom: 50px;
   color: #272727;
   font-size: 16px;
+}
+@media screen and (max-width: 570px) {
+  .worksMain .workList .workBox .desc {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
 }
 
 .mapSec {
@@ -665,11 +708,22 @@ header .collapsCust .navbar-nav .nav-item a.active {
   padding-bottom: 80px;
   background: #f8f8f8;
 }
+@media screen and (max-width: 570px) {
+  .keepInTouch {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .keepInTouch .left .heading {
   font-size: 30px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media screen and (max-width: 570px) {
+  .keepInTouch .left .heading {
+    font-size: 24px;
+  }
 }
 .keepInTouch .left .divider {
   width: 80px;
