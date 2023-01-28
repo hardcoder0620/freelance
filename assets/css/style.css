@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Questrial&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+
+.load {
+  position: fixed;
+  z-index: 1399;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load span {
+  scale: 2;
+}
+
+.loader {
+  -webkit-animation: rotate 1s infinite;
+          animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.loader:before {
+  -webkit-animation: ball1 1s infinite;
+          animation: ball1 1s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #ff3d00;
+  margin-bottom: 10px;
+}
+
+.loader:after {
+  -webkit-animation: ball2 1s infinite;
+          animation: ball2 1s infinite;
+  background-color: #ff3d00;
+  box-shadow: 30px 0 0 #fff;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+@-webkit-keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #ff3d00;
+  }
+  50% {
+    box-shadow: 0 0 0 #ff3d00;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+}
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #ff3d00;
+  }
+  50% {
+    box-shadow: 0 0 0 #ff3d00;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+}
+@-webkit-keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
+}
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
+}
+header .navCust {
+  padding: 0px;
+  border-bottom: 1px solid #E4E4E4;
+}
+header .logoImg {
+  width: 145px;
+  padding: 8px 0px;
+}
+header .collapsCust .navbar-nav .nav-item a {
+  padding: 25px;
+  font-size: 14px;
+  color: #272727;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: -1px;
+}
+header .collapsCust .navbar-nav .nav-item a.active {
+  border-bottom: 2px solid #696969;
+}
+
+.mainSlider {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: white;
+}
+.mainSlider .inner {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.mainSlider .inner .carouselCust .carousel-control-prev {
+  top: 45%;
+  transform: translateY(-50%);
+  left: -50px;
+  background: black;
+  opacity: 1;
+  height: 50px;
+  width: 50px;
+}
+.mainSlider .inner .carouselCust .carousel-control-prev span {
+  scale: 0.8;
+}
+.mainSlider .inner .carouselCust .carousel-control-next {
+  top: calc(45% + 52px);
+  transform: translateY(-50%);
+  left: -50px;
+  background: black;
+  opacity: 1;
+  height: 50px;
+  width: 50px;
+}
+.mainSlider .inner .carouselCust .carousel-control-next span {
+  scale: 0.8;
+}
+.mainSlider .inner .carouselCust .indicatorsCust {
+  top: 0px;
+  right: -50px;
+  bottom: 0px;
+  left: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.mainSlider .inner .carouselCust .indicatorsCust button {
+  height: 12px;
+  width: 12px;
+  border: none;
+  margin-top: 3px;
+  opacity: 1;
+  border: 1px solid black;
+  background: white;
+  transition: all 0.3s;
+}
+.mainSlider .inner .carouselCust .indicatorsCust button.active {
+  background: black;
+}
+
+.companyIntro {
+  background: #f7f7f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.companyIntro .addCard {
+  border: 1px solid #272727;
+  padding: 40px 25px;
+  height: 100%;
+  transition: all 0.4s;
+}
+.companyIntro .addCard:hover {
+  background: #272727;
+}
+.companyIntro .addCard:hover .cardIco {
+  filter: invert(1);
+}
+.companyIntro .addCard:hover .subHead, .companyIntro .addCard:hover .desc {
+  color: white;
+}
+.companyIntro .addCard .cardIco {
+  filter: invert(0);
+  transition: all 0.4s;
+  height: 52px;
+  width: 52px;
+}
+.companyIntro .addCard .subHead {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #272727;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  transition: all 0.4s;
+}
+.companyIntro .addCard .desc {
+  font-size: 16px;
+  color: #303030;
+  text-transform: capitalize;
+  transition: all 0.4s;
+  margin-top: 15px;
+}
+.companyIntro .headingSec .heading {
+  color: #272727;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+}
+
+.founderMain {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: white;
+}
+.founderMain .left .heading {
+  color: #272727;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.founderMain .left .name {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #272727;
+  text-transform: capitalize;
+}
+.founderMain .left .degree {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #272727;
+}
+.founderMain .left .clg {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #272727;
+}
+.founderMain .left .desc {
+  margin-top: 15px;
+}
+.founderMain .left .contactBtn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #272727;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px rgba(167, 167, 167, 0);
+  transition: all 0.4s;
+}
+.founderMain .left .contactBtn:hover {
+  box-shadow: 5px 5px 0px #CC6F3C;
+}
+.founderMain .left .aboutList {
+  padding-top: 20px;
+}
+.founderMain .left .aboutList .list {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.founderMain .left .aboutList .list .iconn {
+  font-size: 18px;
+  color: #272727;
+}
+.founderMain .left .aboutList .list .text {
+  padding-left: 10px;
+  flex: 1;
+  color: #272727;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.founderMain .right .imgBox {
+  width: 360px;
+  margin: auto;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+.founderMain .right .imgBox .founderImg {
+  box-shadow: 30px 40px 0px #272727;
+}
+
+.objectivesMain {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f7f7f7;
+}
+.objectivesMain .heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: #272727;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.objectivesMain .divider {
+  width: 80px;
+  height: 2px;
+  background: #272727;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.objectivesMain .mainDesc {
+  padding-top: 20px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  color: #272727;
+  margin: auto;
+}
+.objectivesMain .objList {
+  padding-top: 50px;
+}
+.objectivesMain .objList .objBox {
+  border: 1px solid #272727;
+  padding: 30px 20px;
+  height: 100%;
+  transition: all 0.4s;
+}
+.objectivesMain .objList .objBox:hover {
+  background: #CC6F3C;
+  border: 1px solid #CC6F3C;
+}
+.objectivesMain .objList .objBox:hover .head, .objectivesMain .objList .objBox:hover .desc {
+  color: rgb(255, 255, 255);
+}
+.objectivesMain .objList .objBox:hover .exWorks {
+  color: white;
+}
+.objectivesMain .objList .objBox .head {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  color: #272727;
+  text-transform: capitalize;
+  transition: all 0.4s;
+}
+.objectivesMain .objList .objBox .desc {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+  color: #272727;
+  transition: all 0.4s;
+}
+.objectivesMain .objList .objBox .exWorks {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration-thickness: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #CC6F3C;
+  transition: all 0.4s;
+}
+
+.worksMain {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f7f7f7;
+}
+.worksMain .heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: #272727;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.worksMain .divider {
+  width: 80px;
+  height: 2px;
+  background: #272727;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.worksMain .mainDesc {
+  padding-top: 20px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  color: #272727;
+  margin: auto;
+}
+.worksMain .workList {
+  padding-top: 40px;
+}
+
+footer .upper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #929292;
+}
+footer .upper .linksMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .upper .linksMain .links {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .upper .linksMain .links a {
+  color: #272727;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .upper .linksMain .links a .iconn {
+  color: #272727;
+}
+footer .lower {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer .lower .copy {
+  text-align: center;
+  font-size: 16px;
+  color: #272727;
+}
+footer .lower .copy a {
+  text-decoration: none;
+  color: #CC6F3C;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
