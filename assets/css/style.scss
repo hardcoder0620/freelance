@@ -132,8 +132,20 @@ header {
                     letter-spacing: 1px;
                     margin-bottom: -1px;
 
+                    @media screen and (max-width:990px) {
+                        padding: 15px;
+
+                    }
+
                     &.active {
                         border-bottom: 2px solid #696969;
+
+                        @media screen and (max-width:990px) {
+                            border-bottom: 0px;
+                            color: #CC6F3C;
+
+
+                        }
                     }
                 }
             }
@@ -148,9 +160,20 @@ header {
     padding-bottom: 80px;
     background: white;
 
+    @media screen and (max-width:570px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
     .inner {
         padding-left: 50px;
         padding-right: 50px;
+
+        @media screen and (max-width:570px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
         .carouselCust {
             .carousel-control-prev {
@@ -161,6 +184,11 @@ header {
                 opacity: 1;
                 height: 50px;
                 width: 50px;
+
+                @media screen and (max-width:570px) {
+                    display: none;
+
+                }
 
                 span {
                     scale: .8;
@@ -176,22 +204,31 @@ header {
                 height: 50px;
                 width: 50px;
 
+                @media screen and (max-width:570px) {
+                    display: none;
+
+                }
+
                 span {
                     scale: .8;
                 }
             }
 
             .indicatorsCust {
-                top: 0px;
-                right: -50px;
-                bottom: 0px;
-                left: auto;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-right: 0px;
-                margin-bottom: 0px;
-                margin-left: 0px;
+                margin-bottom: -30px;
+
+                @media screen and (min-width:570px) {
+                    top: 0px;
+                    right: -50px;
+                    bottom: 0px;
+                    left: auto;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                }
 
                 button {
                     height: 12px;
@@ -221,11 +258,27 @@ header {
     padding-top: 80px;
     padding-bottom: 80px;
 
+    @media screen and (max-width:570px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .companyIntroRow {
+        @media screen and (max-width:990px) {
+            flex-direction: column-reverse;
+        }
+    }
+
     .addCard {
         border: 1px solid #272727;
         padding: 40px 25px;
         height: 100%;
         transition: all .4s;
+
+        @media screen and (max-width:570px) {
+            padding: 30px 20px;
+        }
+
 
         &:hover {
             background: #272727;
@@ -272,6 +325,12 @@ header {
             text-transform: uppercase;
             font-family: 'Oswald', sans-serif;
             font-weight: 900;
+
+            @media screen and (max-width:570px) {
+                font-size: 30px;
+
+
+            }
         }
     }
 }
@@ -280,7 +339,21 @@ header {
 .founderMain {
     padding-top: 80px;
     padding-bottom: 80px;
+
     background: white;
+
+    @media screen and (max-width:570px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .founderMainRow {
+        @media screen and (max-width:990px) {
+            flex-direction: column-reverse;
+
+
+        }
+    }
 
     .left {
         .heading {
@@ -289,6 +362,12 @@ header {
             font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
             font-weight: 900;
+            @media screen and (max-width:570px) {
+                font-size: 30px;
+               .brClass{
+                display: none;
+               }
+            }
         }
 
         .name {
@@ -296,12 +375,19 @@ header {
             font-size: 28px;
             color: #272727;
             text-transform: capitalize;
+            @media screen and (max-width:570px) {
+                margin-top: 10px;
+                font-size: 24px;
+            }
         }
 
         .degree {
             margin-top: 15px;
             font-size: 20px;
             color: #272727;
+            @media screen and (max-width:570px) {
+                margin-top: 10px;
+            }
         }
 
         .clg {
@@ -364,7 +450,9 @@ header {
             margin: auto;
             padding-right: 30px;
             padding-bottom: 40px;
-
+            @media screen and (max-width:570px) {
+                width: 100%;
+            }
             .founderImg {
                 box-shadow: 30px 40px 0px #272727;
             }
@@ -377,6 +465,12 @@ header {
     padding-top: 80px;
     padding-bottom: 80px;
     background: #f7f7f7;
+    @media screen and (max-width:570px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        
+    }
 
     .heading {
         text-transform: uppercase;
@@ -385,6 +479,9 @@ header {
         color: #272727;
         font-family: 'Oswald', sans-serif;
         font-weight: 700;
+        @media screen and (max-width:570px) {
+            font-size: 30px;
+        }
     }
 
     .divider {
@@ -403,16 +500,25 @@ header {
         font-size: 16px;
         color: #272727;
         margin: auto;
+        @media screen and (max-width:570px) {
+            padding-top: 15px;
+        }
     }
 
     .objList {
         padding-top: 50px;
+        @media screen and (max-width:570px) {
+            padding-top: 30px;
+        }
 
         .objBox {
             border: 1px solid #272727;
             padding: 30px 20px;
             height: 100%;
             transition: all .4s;
+            @media screen and (max-width:570px) {
+                padding: 15px 10px;
+            }
 
             &:hover {
                 background: #CC6F3C;
@@ -436,6 +542,9 @@ header {
                 color: #272727;
                 text-transform: capitalize;
                 transition: all .4s;
+                @media screen and (max-width:570px) {
+                    font-size: 20px;
+                }
             }
 
             .desc {
@@ -458,6 +567,9 @@ header {
                 font-weight: 700;
                 color: #CC6F3C;
                 transition: all .4s;
+                @media screen and (max-width:570px) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -470,7 +582,7 @@ header {
 .worksMain {
     padding-top: 80px;
     padding-bottom: 80px;
-    background: #f7f7f7;
+    background: white;
 
     .heading {
         text-transform: uppercase;
@@ -505,25 +617,28 @@ header {
         .workBox {
             border: 1px solid grey;
             height: 100%;
-            &.partnerbox{
+
+            &.partnerbox {
                 padding: 20px;
             }
-            &:hover{
-                .imgBox{
-                    img{
+
+            &:hover {
+                .imgBox {
+                    img {
                         scale: 1.2;
                     }
                 }
             }
+
             .imgBox {
                 overflow: hidden;
-              
+
 
                 img {
                     scale: 1;
                     transition: all .4s;
 
-                  
+
                 }
             }
 
@@ -535,7 +650,8 @@ header {
                 text-transform: capitalize;
                 font-weight: 700;
                 font-family: 'Oswald', sans-serif;
-                &.partnerHead{
+
+                &.partnerHead {
                     margin-top: 20px;
                     text-align: center;
                     font-size: 18px;
@@ -557,13 +673,15 @@ header {
 }
 
 // .mapSec
-.mapSec{
+.mapSec {
     position: relative;
-    iframe{
+
+    iframe {
         height: 500px;
         width: 100%;
     }
-    .contactBox{
+
+    .contactBox {
         position: absolute;
         top: 50%;
         right: 100px;
@@ -572,7 +690,8 @@ header {
         padding: 50px 30px;
         width: 400px;
         transform: translateY(-50%);
-        .head{
+
+        .head {
             font-size: 24px;
             color: #272727;
             text-transform: capitalize;
@@ -580,24 +699,101 @@ header {
             font-weight: 700;
 
         }
-        .address{
+
+        .address {
             margin-top: 30px;
             font-size: 17px;
             color: #272727;
             text-transform: capitalize;
         }
-        .mail{
+
+        .mail {
             margin-top: 15px;
-            &.call{
+
+            &.call {
                 margin-top: 5px;
             }
-            a{
+
+            a {
                 font-size: 16px;
                 text-decoration: none;
 
                 color: #272727;
                 color: #CC6F3C;
-              
+
+            }
+
+        }
+    }
+}
+
+// keepInTouch
+.keepInTouch {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #f8f8f8;
+
+    .left {
+        .heading {
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .divider {
+            width: 80px;
+            height: 1px;
+            background: #272727;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            margin-top: 30px;
+
+        }
+    }
+
+    .right {
+        .inBox {
+            margin-bottom: 15px;
+
+            .text {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #272727;
+                font-family: 'Oswald', sans-serif;
+
+
+            }
+
+            input,
+            textarea {
+                margin-top: 5px;
+                border: 0px;
+                width: 100%;
+                outline: none;
+                border-bottom: 1px solid #272727;
+                background: transparent;
+
+            }
+        }
+
+        button {
+            padding: 10px 30px;
+            border: 1px solid #272727;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            background: transparent;
+            font-weight: 700;
+            box-shadow: 0px 0px 5px #cc6e3c00;
+            transition: all .4s;
+
+            &:hover {
+                box-shadow: 5px 5px 0px #CC6F3C;
             }
 
         }
@@ -611,16 +807,33 @@ footer {
         padding-top: 50px;
         padding-bottom: 50px;
         border-bottom: 1px solid #929292;
+        @media screen and (max-width:570px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 
         .linksMain {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media screen and (max-width:770px) {
+                flex-direction: column;
+                row-gap: 20px;
+                
+            }
 
             .links {
                 display: flex;
                 align-items: center;
                 column-gap: 20px;
+
+                &.notIco{
+                    @media screen and (max-width:570px) {
+                        flex-direction: column;
+                        row-gap: 15px;
+                        
+                    }
+                }
 
                 a {
                     color: #272727;
@@ -640,11 +853,18 @@ footer {
     .lower {
         padding-top: 40px;
         padding-bottom: 40px;
+        @media screen and (max-width:570px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 
         .copy {
             text-align: center;
             font-size: 16px;
             color: #272727;
+            @media screen and (max-width:570px) {
+                font-size: 14px;
+            }
 
             a {
                 text-decoration: none;
@@ -652,6 +872,7 @@ footer {
                 font-weight: 600;
                 letter-spacing: 1px;
                 text-transform: capitalize;
+
             }
         }
 
