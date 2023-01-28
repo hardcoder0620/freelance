@@ -227,7 +227,8 @@ header .collapsCust .navbar-nav .nav-item a.active {
 .companyIntro .addCard:hover .cardIco {
   filter: invert(1);
 }
-.companyIntro .addCard:hover .subHead, .companyIntro .addCard:hover .desc {
+.companyIntro .addCard:hover .subHead,
+.companyIntro .addCard:hover .desc {
   color: white;
 }
 .companyIntro .addCard .cardIco {
@@ -378,7 +379,8 @@ header .collapsCust .navbar-nav .nav-item a.active {
   background: #CC6F3C;
   border: 1px solid #CC6F3C;
 }
-.objectivesMain .objList .objBox:hover .head, .objectivesMain .objList .objBox:hover .desc {
+.objectivesMain .objList .objBox:hover .head,
+.objectivesMain .objList .objBox:hover .desc {
   color: rgb(255, 255, 255);
 }
 .objectivesMain .objList .objBox:hover .exWorks {
@@ -444,6 +446,88 @@ header .collapsCust .navbar-nav .nav-item a.active {
 }
 .worksMain .workList {
   padding-top: 40px;
+}
+.worksMain .workList .workBox {
+  border: 1px solid grey;
+  height: 100%;
+}
+.worksMain .workList .workBox.partnerbox {
+  padding: 20px;
+}
+.worksMain .workList .workBox:hover .imgBox img {
+  scale: 1.2;
+}
+.worksMain .workList .workBox .imgBox {
+  overflow: hidden;
+}
+.worksMain .workList .workBox .imgBox img {
+  scale: 1;
+  transition: all 0.4s;
+}
+.worksMain .workList .workBox .head {
+  margin-top: 50px;
+  padding: 0px 20px;
+  color: #272727;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.worksMain .workList .workBox .head.partnerHead {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Questrial", sans-serif;
+}
+.worksMain .workList .workBox .desc {
+  margin-top: 20px;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+  color: #272727;
+  font-size: 16px;
+}
+
+.mapSec {
+  position: relative;
+}
+.mapSec iframe {
+  height: 500px;
+  width: 100%;
+}
+.mapSec .contactBox {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  background: white;
+  border: 1px solid grey;
+  padding: 50px 30px;
+  width: 400px;
+  transform: translateY(-50%);
+}
+.mapSec .contactBox .head {
+  font-size: 24px;
+  color: #272727;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.mapSec .contactBox .address {
+  margin-top: 30px;
+  font-size: 17px;
+  color: #272727;
+  text-transform: capitalize;
+}
+.mapSec .contactBox .mail {
+  margin-top: 15px;
+}
+.mapSec .contactBox .mail.call {
+  margin-top: 5px;
+}
+.mapSec .contactBox .mail a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #272727;
+  color: #CC6F3C;
 }
 
 footer .upper {
