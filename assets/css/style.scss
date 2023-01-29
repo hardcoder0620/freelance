@@ -708,6 +708,9 @@ header {
     iframe {
         height: 500px;
         width: 100%;
+        @media screen and (max-width:570px) {
+            height: 400px;
+        }
     }
 
     .contactBox {
@@ -719,6 +722,16 @@ header {
         padding: 50px 30px;
         width: 400px;
         transform: translateY(-50%);
+        @media screen and (max-width:570px) {
+            position: static;
+            top: auto;
+            right: auto;
+            width: 100%;
+            transform: translateY(0%);
+            border: none;
+            padding: 40px 20px;
+            
+        }
 
         .head {
             font-size: 24px;
@@ -775,7 +788,6 @@ header {
             font-weight: 700;
             @media screen and (max-width:570px) {
                 font-size: 24px;
-                
             }
         }
 
@@ -789,6 +801,7 @@ header {
 
         .desc {
             margin-top: 30px;
+            max-width: 400px;
 
         }
     }

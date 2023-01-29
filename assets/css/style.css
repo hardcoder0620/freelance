@@ -667,6 +667,11 @@ header .collapsCust .navbar-nav .nav-item a.active {
   height: 500px;
   width: 100%;
 }
+@media screen and (max-width: 570px) {
+  .mapSec iframe {
+    height: 400px;
+  }
+}
 .mapSec .contactBox {
   position: absolute;
   top: 50%;
@@ -676,6 +681,17 @@ header .collapsCust .navbar-nav .nav-item a.active {
   padding: 50px 30px;
   width: 400px;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 570px) {
+  .mapSec .contactBox {
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    transform: translateY(0%);
+    border: none;
+    padding: 40px 20px;
+  }
 }
 .mapSec .contactBox .head {
   font-size: 24px;
@@ -734,6 +750,7 @@ header .collapsCust .navbar-nav .nav-item a.active {
 }
 .keepInTouch .left .desc {
   margin-top: 30px;
+  max-width: 400px;
 }
 .keepInTouch .right .inBox {
   margin-bottom: 15px;
